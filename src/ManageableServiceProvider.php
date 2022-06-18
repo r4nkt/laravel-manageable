@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Manageable;
+namespace R4nkt\Manageable;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\ServiceProvider;

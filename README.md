@@ -1,12 +1,12 @@
 # Track users who manage models in your Laravel app
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/signifly/laravel-manageable.svg?style=flat-square)](https://packagist.org/packages/signifly/laravel-manageable)
-[![Build Status](https://img.shields.io/travis/signifly/laravel-manageable/master.svg?style=flat-square)](https://travis-ci.org/signifly/laravel-manageable)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/r4nkt/laravel-manageable.svg?style=flat-square)](https://packagist.org/packages/r4nkt/laravel-manageable)
+[![Build Status](https://img.shields.io/travis/r4nkt/laravel-manageable/master.svg?style=flat-square)](https://travis-ci.org/r4nkt/laravel-manageable)
 [![StyleCI](https://styleci.io/repos/119214202/shield?branch=master)](https://styleci.io/repos/119214202)
-[![Quality Score](https://img.shields.io/scrutinizer/g/signifly/laravel-manageable.svg?style=flat-square)](https://scrutinizer-ci.com/g/signifly/laravel-manageable)
-[![Total Downloads](https://img.shields.io/packagist/dt/signifly/laravel-manageable.svg?style=flat-square)](https://packagist.org/packages/signifly/laravel-manageable)
+[![Quality Score](https://img.shields.io/scrutinizer/g/r4nkt/laravel-manageable.svg?style=flat-square)](https://scrutinizer-ci.com/g/r4nkt/laravel-manageable)
+[![Total Downloads](https://img.shields.io/packagist/dt/r4nkt/laravel-manageable.svg?style=flat-square)](https://packagist.org/packages/r4nkt/laravel-manageable)
 
-The `signifly/laravel-manageable` package allows you to easily track who creates/updates your models.
+The `r4nkt/laravel-manageable` package allows you to easily track who creates/updates your models.
 
 All you have to do to get started is:
 
@@ -51,14 +51,14 @@ Until further documentation is provided, please have a look at the tests.
 You can install the package via composer:
 
 ```bash
-composer require signifly/laravel-manageable
+composer require r4nkt/laravel-manageable
 ```
 
 The package will automatically register itself.
 
 You can publish the config with:
 ```bash
-php artisan vendor:publish --provider="Signifly\Manageable\ManageableServiceProvider"
+php artisan vendor:publish --provider="R4nkt\Manageable\ManageableServiceProvider"
 ```
 
 ## Testing
@@ -68,7 +68,7 @@ composer test
 
 ## Security
 
-If you discover any security issues, please email dev@signifly.com instead of using the issue tracker.
+If you discover any security issues, please email dev@r4nkt.com instead of using the issue tracker.
 
 ## Credits
 

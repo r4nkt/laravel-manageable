@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Manageable;
+namespace R4nkt\Manageable;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

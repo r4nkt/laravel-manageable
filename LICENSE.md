@@ -1,3 +1,5 @@
+This repository was forked from github.com/signifly/laravel-manageable.  Here is the original license:
+
 # The MIT License (MIT)
 
 Copyright (c) Signifly <info@signifly.com>

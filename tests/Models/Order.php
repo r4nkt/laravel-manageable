@@ -1,9 +1,9 @@
 <?php
 
-namespace Signifly\Manageable\Test\Models;
+namespace R4nkt\Manageable\Test\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Signifly\Manageable\Manageable;
+use R4nkt\Manageable\Manageable;
 
 class Order extends Model
 {

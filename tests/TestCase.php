@@ -1,12 +1,12 @@
 <?php
 
-namespace Signifly\Manageable\Test;
+namespace R4nkt\Manageable\Test;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Testing\WithFaker;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Signifly\Manageable\ManageableServiceProvider;
-use Signifly\Manageable\Test\Models\User;
+use R4nkt\Manageable\ManageableServiceProvider;
+use R4nkt\Manageable\Test\Models\User;
 
 abstract class TestCase extends Orchestra
 {

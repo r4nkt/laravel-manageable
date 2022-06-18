@@ -1,9 +1,9 @@
 <?php
 
-namespace Signifly\Manageable\Test;
+namespace R4nkt\Manageable\Test;
 
-use Signifly\Manageable\Test\Models\Order;
-use Signifly\Manageable\Test\Models\User;
+use R4nkt\Manageable\Test\Models\Order;
+use R4nkt\Manageable\Test\Models\User;
 
 class ManageableTest extends TestCase
 {

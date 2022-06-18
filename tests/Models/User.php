@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Manageable\Test\Models;
+namespace R4nkt\Manageable\Test\Models;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
