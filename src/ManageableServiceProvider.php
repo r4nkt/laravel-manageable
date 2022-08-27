@@ -32,6 +32,12 @@ class ManageableServiceProvider extends ServiceProvider
                 ->on($foreignTable)
                 ->onDelete('set null');
         });
+
+        Blueprint::macro('unmanageable', function ($bigIntegers = true, $foreignTable = 'users', $foreignKey = 'id') {
+            $this->dropForeign(['created_by']);
+            $this->dropForeign(['updated_by']);
+            $this->dropColumn(['created_by', 'updated_by']);
+        });
     }
 
     /**

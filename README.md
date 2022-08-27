@@ -43,6 +43,15 @@ $this->foreign('updated_by')
     ->onDelete('set null');
 ```
 
+Likewise, the macro `unmanageable` does the following to your table:
+```php
+$this->dropForeign(['created_by']);
+
+$this->dropForeign(['updated_by']);
+
+$this->dropColumn(['created_by', 'updated_by']);
+```
+
 ## Documentation
 Until further documentation is provided, please have a look at the tests.
 
