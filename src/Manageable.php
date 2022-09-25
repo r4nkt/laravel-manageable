@@ -14,7 +14,7 @@ trait Manageable
             $model->setManageable('created_by', 'creator');
         });
 
-        static::updating(function (Model $model) {
+        static::saving(function (Model $model) {
             $model->setManageable('updated_by', 'editor');
         });
     }
@@ -46,6 +46,9 @@ trait Manageable
         if ($guard->check()) {
             $this->{$type} = $guard->id();
             $this->setRelation($relation, $guard->user());
+        } else {
+            $this->{$type} = null;
+            $this->setRelation($relation, null);
         }
     }
 
