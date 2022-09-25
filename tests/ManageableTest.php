@@ -10,7 +10,7 @@ class ManageableTest extends TestCase
     /** @test */
     public function it_tracks_who_creates_an_order()
     {
-        $user = $this->createUser(['name' => 'Harry']);
+        $user = $this->createUser(['name' => 'Gandalf']);
 
         $this->actingAs($user);
 
@@ -29,7 +29,7 @@ class ManageableTest extends TestCase
     /** @test */
     public function it_tracks_who_updates_an_order()
     {
-        $userA = $this->createUser(['name' => 'Harry']);
+        $userA = $this->createUser(['name' => 'Gandalf']);
 
         $this->actingAs($userA);
 
@@ -37,7 +37,7 @@ class ManageableTest extends TestCase
             'title' => 'some title',
         ]);
 
-        $userB = $this->createUser(['name' => 'Lloyd']);
+        $userB = $this->createUser(['name' => 'Saruman']);
 
         $this->actingAs($userB);
 
@@ -55,7 +55,7 @@ class ManageableTest extends TestCase
     /** @test */
     public function it_updates_the_editor()
     {
-        $userA = $this->createUser(['name' => 'Harry']);
+        $userA = $this->createUser(['name' => 'Gandalf']);
 
         $this->actingAs($userA);
 
@@ -64,7 +64,7 @@ class ManageableTest extends TestCase
         ]);
 
         // Update with editor
-        $userB = $this->createUser(['name' => 'Lloyd']);
+        $userB = $this->createUser(['name' => 'Saruman']);
         $this->actingAs($userB);
 
         $order->title = 'some new title';
@@ -76,7 +76,7 @@ class ManageableTest extends TestCase
         });
 
         // Update again with different editor
-        $userC = $this->createUser(['name' => 'Sea Bass']);
+        $userC = $this->createUser(['name' => 'Radagast']);
         $this->actingAs($userC);
 
         $order->title = 'another new title';
@@ -111,7 +111,7 @@ class ManageableTest extends TestCase
     /** @test */
     public function it_tracks_null_editor_on_update_if_a_user_is_not_authenticated()
     {
-        $userA = $this->createUser(['name' => 'Harry']);
+        $userA = $this->createUser(['name' => 'Gandalf']);
 
         $order = Order::create([
             'title' => 'some title',
