@@ -10,13 +10,9 @@ trait Manageable
 {
     public static function bootManageable(): void
     {
-        static::creating(function (Model $model) {
-            $model->setManageable('created_by', 'creator');
-        });
+        static::creating(fn (Model $model): void => $model->setManageable('created_by', 'creator'));
 
-        static::saving(function (Model $model) {
-            $model->setManageable('updated_by', 'editor');
-        });
+        static::saving(fn (Model $model): void => $model->setManageable('updated_by', 'editor'));
     }
 
     public function creator(): BelongsTo
